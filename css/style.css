@@ -1,196 +1,206 @@
-/* importando fontes */
+/* IMPORTANDO FONTES */
 
 @font-face {
-  font-family: "Lato";
-  src: url(./fonts/lato/Lato-Light.ttf);
+    font-family: "Lato";
+    src: url(./fonts/Lato/Lato-Light.ttf);
 }
 
 @font-face {
-  font-family: Roboto;
-  src: url(./fonts/roboto/Roboto-Bold.ttf);
+    font-family: "Roboto";
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 /* ---- reset ---- */
 
 body {
-  margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
 }
 
 canvas {
-  display: block;
-  vertical-align: bottom;
+    display: block;
+    vertical-align: bottom;
 }
 
-/* ---- particulas.js container ---- */
+
+/* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-/* ---- estatus.js ---- */
+
+/* ---- stats.js ---- */
 
 .count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13e8e9;
-  font-size: 0.8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
 .js-count-particles {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 #stats,
 .count-particles {
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 #stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
 }
 
 .count-particles {
-  border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
 }
 
-/* utilidades */
+
+/* UTILIDADES */
 
 img {
-  max-width: 100%;
-}
-
-.text-content {
-  margin-left: 20px;
-}
-
-.img-content {
-  margin-right: 20px;
+    max-width: 100%;
 }
 
 .contenedor {
-  position: fixed;
-  top: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 95%;
 }
 
-/* meus estilos  */
+
+/* MEuS ESTILOS */
 
 .containerHeader {
-  height: 100vh;
-  background-color: blue;
-  background: linear-gradient(90deg, #3a47d5, #00d2ff 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    background-color: blue;
+    background: linear-gradient( 90deg, #3a47d5 0%, #00d2ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .containMain {
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  height: 90vh;
-  gap: 8rem;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    width: 100%;
+    gap: 8rem;
+    position: absolute;
+    z-index: 1;
 }
 
-.containMain .item {
-  /* border: 1px solid red; */
-}
+.containMain .item {}
 
 .item h1 {
-  font-family: "lato";
-  font-weight: lighter;
-  line-height: 4rem;
-  font-size: 2.6rem;
-  text-transform: capitalize;
-  color: #fff;
+    font-family: "Lato";
+    font-weight: lighter;
+    line-height: 4rem;
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    color: #FFF;
 }
 
 .item p {
-  font-size: 16px;
-  color: #fff;
-  font-family: "Lato";
-  line-height: 2rem;
-  margin: 2rem 0;
+    font-size: 16px;
+    color: #FFF;
+    font-family: "Lato";
+    line-height: 2rem;
+    margin: 2rem 0;
 }
 
 .item button {
-  width: 10rem;
-  height: 3rem;
-  background: transparent;
-  font-family: "Lato";
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 50px;
-  border: 2px solid #fff;
-  cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    background: transparent;
+    font-family: "Lato";
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
 }
 
 .item:nth-of-type(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Navbar */
+
+/* NAVEGAÇÃO */
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 5rem;
-  padding: 0.5rem 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    padding: .5rem 0;
 }
 
 nav .contenedor {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contenedor .containerL {
-  display: inherit;
-  align-items: center;
+    display: inherit;
+    align-items: center;
 }
 
 .containerL h2 {
-  font-family: "Roboto";
-  font-size: 2rem;
-  color: #fff;
+    font-family: "Roboto";
+    font-size: 2rem;
+    color: #FFF;
 }
 
-.containerLINKS {
-  margin-left: 4rem;
+.containerLinks {
+    margin-left: 4rem;
 }
 
-.containerLINKS a {
-  margin-right: 2.5rem;
-  color: #fff;
-  font-size: 16px;
-  font-family: "Lato";
-  text-transform: capitalize;
-  text-decoration: none;
+.containerLinks a {
+    margin-right: 2.5rem;
+    color: #FFF;
+    font-family: "Lato";
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.containerR {
+    display: inherit;
+    align-items: center;
+}
+
+.containerR button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    font-family: "Lato";
+    font-size: 1.2rem;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
 }
